@@ -1,0 +1,9 @@
+project_name: simcy
+builds:
+  - id: simcy-windows
+    binary: simcy
+    env: 
+      - CGO_ENABLED=1
+      - CC=x86_64-w64-mingw32-gcc-win32
+    goos: [windows]
+    goarch: [amd64]
